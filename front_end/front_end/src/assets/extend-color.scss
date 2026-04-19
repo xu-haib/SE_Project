@@ -1,0 +1,32 @@
+// 扩展 Element Plus 颜色变量和样式
+
+@use 'sass:color';
+
+// 定义科技蓝调色板
+$--color-tech: (
+  'base': #4f9cf9,
+  'light-1': color.mix(#fff, #4f9cf9, 20%),
+  'light-2': color.mix(#fff, #4f9cf9, 40%),
+  'light-3': color.mix(#fff, #4f9cf9, 60%),
+  'light-4': color.mix(#fff, #4f9cf9, 80%),
+  'light-5': color.mix(#fff, #4f9cf9, 90%),
+  'dark-1': color.mix(#000, #4f9cf9, 10%),
+  'dark-2': color.mix(#000, #4f9cf9, 20%),
+  'dark-3': color.mix(#000, #4f9cf9, 30%),
+) !default;
+
+// 覆盖 Element 主色为科技蓝
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #4f9cf9,
+      'light-3': color.mix(#fff, #4f9cf9, 60%),
+      'light-5': color.mix(#fff, #4f9cf9, 80%),
+      'light-7': color.mix(#fff, #4f9cf9, 86%),
+      'light-8': color.mix(#fff, #4f9cf9, 92%),
+      'light-9': color.mix(#fff, #4f9cf9, 96%),
+      'dark-2': color.mix(#000, #4f9cf9, 20%),
+    ),
+    'tech': $--color-tech,
+  )
+);

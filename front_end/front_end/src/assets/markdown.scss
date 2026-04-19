@@ -1,0 +1,120 @@
+.markdown-wrap,
+.markdown {
+  overflow-wrap: break-word;
+  line-height: 1.5;
+
+  h1,
+  h2 {
+    padding-bottom: 0.2em;
+    border-bottom: solid 1px #eee;
+  }
+
+  h1 {
+    margin: 0.5rem 0;
+    font-size: 2em;
+  }
+
+  h2 {
+    margin: 0.5rem 0;
+    font-size: 1.5em;
+  }
+
+  h3 {
+    margin: 0.5rem 0;
+    font-size: 1.17em;
+  }
+
+  h4 {
+    margin: 0.5rem 0;
+    font-size: 1em;
+  }
+
+  h5 {
+    margin: 0.5rem 0;
+    font-size: 0.83em;
+  }
+
+  h6 {
+    margin: 0.5rem 0;
+    font-size: 0.67em;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  ul,
+  ol {
+    padding-left: 2em;
+    // list-style: outside disc;
+  }
+
+  /**
+  ol {
+      padding-left: 1.5em;
+      list-style: outside decimal;
+  }
+  */
+
+  li.task-list-item {
+    list-style-type: none;
+  }
+
+  hr {
+    margin: 1em 0;
+    height: 0;
+    border: none;
+    border-bottom: solid 1px #eee;
+  }
+
+  pre,
+  code {
+    font-family: var(--lfe-code-font, monospace);
+    font-size: 0.875em;
+    background-color: #fafafa;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+  }
+
+  .katex-display {
+    overflow: auto hidden;
+    padding: 2px 0;
+  }
+
+  pre {
+    margin: 1rem 0;
+    padding: 1em;
+    overflow: auto hidden;
+
+    & > code {
+      font-size: unset;
+      margin: 0;
+      padding: 0;
+      white-space: pre;
+      border: none;
+    }
+  }
+
+  code {
+    margin: 0 0.2em;
+    padding: 0.1em 0.2em;
+    white-space: pre-wrap;
+    tab-size: 4; /* stylelint-disable-line */
+    -moz-tab-size: 4; /* stylelint-disable-line */
+  }
+
+  p code,
+  li code {
+    display: inline;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+
+  code {
+    font-family: consolas;
+  }
+}
