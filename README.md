@@ -32,8 +32,8 @@ front_end/         # Vue 前端
 ### 1. 克隆项目
 
 ```bash
-git clone <repository-url>
-cd lab2
+git clone https://github.com/xu-haib/SE_Project.git
+cd SE_Project
 ```
 
 ### 2. 配置数据库
